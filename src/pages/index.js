@@ -5,10 +5,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-fetch('https://v1.hitokoto.cn?encode=text&c=d&c=i').then(res => {
-  return res.text()
-}).then(text => {
-  document.getElementsByTagName('p')[0].innerHTML = text
+const axios = require('axios')
+axios.get('https://v1.hitokoto.cn?encode=text&c=d&c=i').then(res => {
+  document.getElementsByTagName('p')[0].innerHTML = res.data;
 })
 const features = [
   {
