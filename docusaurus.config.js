@@ -76,7 +76,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 清隆. Built with Docusaurus.<br/><a class="footer__link-item" href="http://www.beian.miit.gov.cn/" target="_blank">冀ICP备18039036号-1</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} 清隆. Built with Docusaurus.<br/><a class="footer__link-item" href="https://beian.miit.gov.cn/" target="_blank">冀ICP备18039036号-1</a>`,
     },
   },
   presets: [
