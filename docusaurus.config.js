@@ -9,7 +9,7 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: '清隆的博客',
+      title: '清隆的空间',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -21,7 +21,7 @@ module.exports = {
         //   label: 'Docs',
         //   position: 'left',
         // },
-        {to: '/blog', label: '博客', position: 'right'},
+        {to: '/blog', label: '文章', position: 'right'},
         {
           href: 'https://github.com/Imgodmaoyouknow',
           label: 'GitHub',
@@ -36,7 +36,7 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: '博客',
+              label: '官网',
               to: 'https://waface7.cn',
             },
             {
@@ -76,7 +76,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 清隆. Built with Docusaurus.<br/>冀ICP备18039036号-1`,
+      copyright: `Copyright © ${new Date().getFullYear()} 清隆. Built with Docusaurus.<br/><a class="footer__link-item" href="http://www.beian.miit.gov.cn/" target="_blank">冀ICP备18039036号-1</a>`,
     },
   },
   presets: [

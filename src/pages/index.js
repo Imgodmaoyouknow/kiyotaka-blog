@@ -5,7 +5,11 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-
+fetch('https://v1.hitokoto.cn?encode=text&c=d&c=i').then(res => {
+  return res.text()
+}).then(text => {
+  document.getElementsByTagName('p')[0].innerHTML = text
+})
 const features = [
   {
     title: <>Easy to Use</>,
@@ -59,7 +63,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`清隆的博客`}
+      title={`清隆的空间`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
